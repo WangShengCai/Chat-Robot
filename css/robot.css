@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+}
+::-webkit-scrollbar{
+    width:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+.wrapper{
+    width:600px;
+    height:100%;
+    margin: 0 auto;
+    background-color:#008c8c;
+}
+.wrapper .header{
+    height:40px;
+    color:#fff;
+    line-height:40px;
+    text-align:center;
+    background-color:gray;
+}
+.wrapper .content{
+    height:calc(100% - 40px - 50px);
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.wrapper .content .pic{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    border-radius:50%;
+}
+.wrapper .content .text{
+    max-width:250px;
+    line-height:30px;
+    padding:0 5px;
+    border-radius:5px;
+}
+/* 本人 */
+.wrapper .content .mine{
+    float:right;
+    width:500px;
+    margin:8px;
+}
+.wrapper .content .mine .pic{
+    background-image:url('../img/wsc1.jpg');
+    background-size:100% 100%;
+    float:right;
+    margin-left:7px;
+}
+.wrapper .content .mine .text{
+    float:right;
+    background:yellowgreen;
+    position:relative;
+}
+.wrapper .content .mine .text::after{
+    content:'';
+    display:block;
+    border:6px solid yellowgreen;
+    border-color:transparent transparent transparent yellowgreen;
+    position:absolute;
+    right:-10px;
+    top:10px;
+}
+/* 机器人 */
+.wrapper .content .robot{
+    float:left;
+    width:500px;
+    margin-left:8px;
+}
+.wrapper .content .robot .pic{
+    background-image:url('../img/dog1.jpg');
+    background-size:100% 100%;
+    float:left;
+    margin-right:7px;
+}
+.wrapper .content .robot .text{
+    float:left;
+    background:#fff;
+    position:relative;
+}
+.wrapper .content .robot .text::after{
+    content:'';
+    display:block;
+    border:6px solid yellowgreen;
+    border-color:transparent #fff transparent transparent;
+    position:absolute;
+    left:-10px;
+    top:10px;
+}
+/* 发送 */
+.wrapper .inp{
+    height:40px;
+    line-height:40px;
+    padding:5px;
+    background-color:#ddd;
+    text-align:center;
+}
+.wrapper .inp #inp{
+    width:400px;
+    height:35px;
+    line-height:35px;
+    outline:none;
+    box-sizing:border-box;
+    padding-left:20px;
+    border-radius:5px;
+    border:1px solid skyblue;
+}
+.wrapper .inp #btn{
+    width:60px;
+    height:35px;
+    line-height:30px;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    color:#fff;
+    transition:all .3s;
+    background-color:#008c8c;
+    margin-left:10px;
+}
+.wrapper .inp #btn:hover{
+    background-color:#046d6d;
+}

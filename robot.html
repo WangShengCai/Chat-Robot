@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天机器人</title>
+    <link rel="stylesheet" href="./css/robot.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 头部 -->
+        <p class="header">小渡机器人</p>
+        <!-- 聊天内容 -->
+        <div class="content">
+            <!-- 我 -->
+            <div class="mine">
+                <div class="pic"></div>
+                <div class="text">今天天气怎么样哈？</div>
+            </div>
+            <!-- 机器人 -->
+            <div class="robot">
+                <div class="pic"></div>
+                <div class="text">很好！</div>
+            </div>
+        </div>
+        <!-- 发送 -->
+        <div class="inp">
+            <input type="text" id="inp" placeholder="请输入聊天内容！"><button id="btn">发送</button>
+        </div>
+    </div>
+    <script src="./Utils/jquery-2.0.0.js"></script>
+    <script src="./js/robot.js"></script>
+</body>
+
+</html>
